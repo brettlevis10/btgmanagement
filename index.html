@@ -191,6 +191,11 @@
                         <h3 class="font-heading text-xl font-bold mb-2 text-white">Wealth Management</h3>
                         <p class="text-sm text-btg-muted">Portfolio strategy, asset allocation, and cash flow management tailored to your specific career stage.</p>
                     </div>
+                    <!-- Service 2 -->
+                    <div class="bg-btg-dark p-6 border-l-4 border-btg-blue hover:translate-x-2 transition duration-300">
+                        <h3 class="font-heading text-xl font-bold mb-2 text-white">Tax Strategy & Filing</h3>
+                        <p class="text-sm text-btg-muted">Integrated cross-border tax optimization and treaty navigation for Canada & USA.</p>
+                    </div>
                     <!-- Service 3 -->
                     <div class="bg-btg-dark p-6 border-l-4 border-btg-blue hover:translate-x-2 transition duration-300">
                         <h3 class="font-heading text-xl font-bold mb-2 text-white">Risk Management</h3>
@@ -250,34 +255,64 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-24 bg-btg-card relative overflow-hidden border-t border-slate-800">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            <h2 class="font-heading text-5xl font-bold uppercase mb-6 text-white">Secure Your Future</h2>
-            <p class="text-xl text-btg-muted mb-12">
-                Ready to bridge the gap between your career and your legacy? Reach out to us today.
-            </p>
+    <section id="contact" class="py-24 bg-btg-card border-t border-slate-800 relative overflow-hidden">
+        <!-- Subtle Glow -->
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-btg-blue/10 rounded-full blur-3xl"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                
+                <!-- Contact Info -->
+                <div class="relative z-10">
+                    <h2 class="font-heading text-5xl font-bold uppercase mb-4 text-white">Get In Touch</h2>
+                    <div class="h-1 w-20 bg-btg-blue mb-8"></div>
+                    <p class="text-xl text-btg-muted mb-12 max-w-md">
+                        Ready to bridge the gap between your career and your legacy? Reach out to our team to start your personalized strategy.
+                    </p>
 
-            <form class="max-w-xl mx-auto space-y-4 text-left bg-btg-dark p-8 rounded-lg border border-slate-800 shadow-2xl">
-                <div>
-                    <label for="name" class="block text-sm font-bold text-gray-400 mb-1 uppercase tracking-wider">Name</label>
-                    <input type="text" id="name" name="name" placeholder="John Doe" required class="w-full bg-btg-card border border-slate-700 rounded-sm p-3 text-white placeholder:text-slate-600 focus:outline-none focus:border-btg-blue focus:ring-1 focus:ring-btg-blue transition">
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-btg-dark flex items-center justify-center text-btg-blue border border-slate-700">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold uppercase text-xs tracking-widest">Email Us</h4>
+                                <p class="text-btg-muted">contact@btgmanagement.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-btg-dark flex items-center justify-center text-btg-blue border border-slate-700">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold uppercase text-xs tracking-widest">Website</h4>
+                                <p class="text-btg-muted">www.btgmanagement.com</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <label for="email" class="block text-sm font-bold text-gray-400 mb-1 uppercase tracking-wider">Email</label>
-                    <input type="email" id="email" name="email" placeholder="john@example.com" required class="w-full bg-btg-card border border-slate-700 rounded-sm p-3 text-white placeholder:text-slate-600 focus:outline-none focus:border-btg-blue focus:ring-1 focus:ring-btg-blue transition">
-                </div>
-                <div>
-                    <label for="description" class="block text-sm font-bold text-gray-400 mb-1 uppercase tracking-wider">Brief Description</label>
-                    <textarea id="description" name="description" rows="4" placeholder="How can we help you bridge the gap?" required class="w-full bg-btg-card border border-slate-700 rounded-sm p-3 text-white placeholder:text-slate-600 focus:outline-none focus:border-btg-blue focus:ring-1 focus:ring-btg-blue transition"></textarea>
-                </div>
-                <button type="submit" class="w-full py-4 bg-btg-blue hover:bg-blue-600 text-white font-bold uppercase tracking-widest transition shadow-lg shadow-blue-500/20 mt-4 active:scale-[0.98]">
-                    Submit Inquiry
-                </button>
-            </form>
 
-            <div class="mt-12 flex flex-wrap justify-center gap-8 text-btg-muted">
-                <p><i class="fa-solid fa-envelope text-btg-blue mr-2"></i> contact@btgmanagement.com</p>
-                <p><i class="fa-solid fa-globe text-btg-blue mr-2"></i> www.btgmanagement.com</p>
+                <!-- Contact Form -->
+                <div class="bg-btg-dark p-8 rounded-lg border border-slate-700 shadow-2xl relative z-10">
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Full Name</label>
+                            <input type="text" placeholder="John Smith" class="w-full bg-btg-card border border-slate-700 rounded-sm p-4 text-white focus:outline-none focus:border-btg-blue focus:ring-1 focus:ring-btg-blue transition placeholder:text-slate-600">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Email Address</label>
+                            <input type="email" placeholder="john@example.com" class="w-full bg-btg-card border border-slate-700 rounded-sm p-4 text-white focus:outline-none focus:border-btg-blue focus:ring-1 focus:ring-btg-blue transition placeholder:text-slate-600">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">How can we help?</label>
+                            <textarea rows="4" placeholder="Tell us about your career and financial goals..." class="w-full bg-btg-card border border-slate-700 rounded-sm p-4 text-white focus:outline-none focus:border-btg-blue focus:ring-1 focus:ring-btg-blue transition placeholder:text-slate-600"></textarea>
+                        </div>
+                        <button type="submit" class="group w-full py-4 bg-btg-blue hover:bg-blue-600 text-white font-bold uppercase tracking-widest transition flex items-center justify-center gap-2">
+                            Submit Inquiry
+                            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition"></i>
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
