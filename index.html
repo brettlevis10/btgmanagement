@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridge the Gap Management | Athlete Financial Advisory</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Oswald', 'sans-serif'],
+                    },
+                    colors: {
+                        btg: {
+                            dark: '#0f172a',    // Deep Blue/Black (Slate 900)
+                            card: '#1e293b',    // Lighter Dark (Slate 800)
+                            blue: '#3b82f6',    // Electric Blue
+                            text: '#f8fafc',    // Off-white
+                            muted: '#94a3b8'    // Muted Text
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-btg-dark text-btg-text font-sans antialiased selection:bg-btg-blue selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-btg-dark/90 backdrop-blur-sm border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i class="fa-solid fa-chart-simple text-btg-blue text-2xl"></i>
+                    <span class="font-heading font-bold text-2xl tracking-wide">BTG MANAGEMENT</span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#vision" class="text-sm font-medium text-gray-300 hover:text-btg-blue transition">VISION</a>
+                    <a href="#services" class="text-sm font-medium text-gray-300 hover:text-btg-blue transition">SOLUTIONS</a>
+                    <a href="#why-btg" class="text-sm font-medium text-gray-300 hover:text-btg-blue transition">WHY BTG</a>
+                    <a href="#contact" class="px-5 py-2.5 rounded-sm bg-btg-blue hover:bg-blue-600 text-white font-medium text-sm transition shadow-lg shadow-blue-500/30">
+                        GET IN TOUCH
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Overlay -->
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-btg-dark via-btg-dark/90 to-btg-dark/60"></div>
+
+        <!-- Content -->
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
+            <div class="max-w-3xl">
+                <div class="inline-block px-3 py-1 mb-6 border-l-4 border-btg-blue bg-btg-card/50 backdrop-blur-md">
+                    <span class="text-btg-blue font-bold tracking-widest text-xs uppercase">Empowering Professional Athletes</span>
+                </div>
+                <h1 class="font-heading text-6xl md:text-8xl font-bold leading-tight mb-6 text-white uppercase">
+                    Bridge The <span class="text-transparent bg-clip-text bg-gradient-to-r from-btg-blue to-cyan-400">Gap</span>
+                </h1>
+                <p class="text-xl text-gray-300 mb-10 font-light leading-relaxed border-l-2 border-slate-700 pl-6">
+                    Comprehensive financial management for athletes in Canada & the USA. We build strategies for lasting wealth beyond the game.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#services" class="px-8 py-4 bg-btg-blue hover:bg-blue-600 text-white font-bold rounded-sm text-center transition shadow-[0_0_20px_rgba(59,130,246,0.5)]">
+                        EXPLORE SOLUTIONS
+                    </a>
+                    <a href="#contact" class="px-8 py-4 bg-transparent border border-gray-600 hover:border-btg-blue text-white font-bold rounded-sm text-center transition hover:bg-btg-card">
+                        CONTACT US
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Founders Section -->
+    <section id="vision" class="py-24 bg-btg-card relative">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-btg-blue to-transparent"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                
+                <!-- Text Content -->
+                <div>
+                    <h2 class="font-heading text-4xl font-bold mb-2 uppercase">Our Vision & Leadership</h2>
+                    <div class="h-1 w-20 bg-btg-blue mb-8"></div>
+                    
+                    <h3 class="text-2xl text-white font-medium mb-4">Building Lasting Wealth</h3>
+                    <p class="text-btg-muted text-lg mb-8 leading-relaxed">
+                        To build a premier full-service financial advisory firm tailored to professional athletes, delivering holistic, long-term strategies for lasting wealth and success.
+                    </p>
+
+                    <div class="bg-btg-dark p-8 rounded-lg border border-slate-700 hover:border-btg-blue transition duration-300">
+                        <h4 class="text-btg-blue font-bold text-xl mb-4 uppercase flex items-center gap-2">
+                            <i class="fa-solid fa-user-tie"></i> The Founders
+                        </h4>
+                        <p class="text-white text-lg font-bold mb-2">Brett Levis & Thomas Hasal</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-3 text-btg-muted">
+                                <i class="fa-solid fa-graduation-cap text-btg-blue mt-1.5 text-xs"></i>
+                                <span>MBA in Finance | LLQP Licensed</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-btg-muted">
+                                <i class="fa-solid fa-person-running text-btg-blue mt-1.5 text-xs"></i>
+                                <span>Athlete-Focused Advisors with lived experience</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-btg-muted">
+                                <i class="fa-solid fa-chart-pie text-btg-blue mt-1.5 text-xs"></i>
+                                <span>Deep understanding of unique income patterns</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Image/Visual -->
+                <div class="relative group">
+                    <div class="absolute -inset-2 bg-gradient-to-r from-btg-blue to-cyan-600 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2670&auto=format&fit=crop" alt="Team Meeting" class="relative rounded-lg shadow-2xl grayscale hover:grayscale-0 transition duration-500 border border-slate-700 object-cover h-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Challenge Section -->
+    <section class="py-24 bg-btg-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-4xl font-bold uppercase mb-4">The Financial Challenge</h2>
+                <div class="h-1 w-20 bg-btg-blue mx-auto mb-6"></div>
+                <p class="text-btg-muted max-w-2xl mx-auto text-lg">Professional athletes face a unique set of financial hurdles that traditional advising often overlooks.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Card 1 -->
+                <div class="bg-btg-card p-8 rounded-sm border border-slate-800 hover:border-btg-blue transition duration-300 group">
+                    <div class="w-14 h-14 bg-slate-900 rounded-full flex items-center justify-center border border-slate-700 mb-6 group-hover:border-btg-blue group-hover:text-btg-blue transition">
+                        <i class="fa-solid fa-stopwatch text-2xl"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold mb-3 uppercase">Short Career Windows</h3>
+                    <p class="text-btg-muted leading-relaxed">
+                        Average career: 3-5 years. Limited earning windows require rapid wealth accumulation and preservation strategies tailored to high short-term cash flow.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-btg-card p-8 rounded-sm border border-slate-800 hover:border-btg-blue transition duration-300 group">
+                    <div class="w-14 h-14 bg-slate-900 rounded-full flex items-center justify-center border border-slate-700 mb-6 group-hover:border-btg-blue group-hover:text-btg-blue transition">
+                        <i class="fa-solid fa-puzzle-piece text-2xl"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold mb-3 uppercase">Fragmented Advice</h3>
+                    <p class="text-btg-muted leading-relaxed">
+                        Athletes often work with multiple disconnected advisors (Canada vs USA). Lack of coordination leads to missed opportunities and conflicting advice.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-btg-card border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:flex lg:gap-16">
+                <!-- Sticky Title -->
+                <div class="lg:w-1/3 mb-12 lg:mb-0">
+                    <div class="sticky top-32">
+                        <h2 class="font-heading text-4xl font-bold uppercase mb-4 leading-tight">Comprehensive<br>Solutions</h2>
+                        <div class="h-1 w-20 bg-btg-blue mb-6"></div>
+                        <p class="text-btg-muted text-lg mb-8">
+                            We provide a "Family Office" model, integrating all aspects of your financial life under one roof.
+                        </p>
+                        <a
