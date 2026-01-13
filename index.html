@@ -17,13 +17,10 @@
                     },
                     colors: {
                         btg: {
-                            dark: '#0f172a',    // Deep Blue/Black (Slate 900)
-                            card: '#1e293b',    // Lighter Dark (Slate 800)
-                            blue: '#3b82f6',    // Electric Blue
-                            text: '#f8fafc',    // Off-white
-                            muted: '#94a3b8'    // Muted Text
-                        }
-                    }
+                dark: '#f8fafc',      // Light background                            card: '#1e293b',    // Lighter Dark (Slate 800)
+                card: '#ffffff',      // White cards
+                text: '#1e293b',      // Dark text on light background                            muted: '#94a3b8'    // Muted Text
+                muted: '#64748b'      // Slate gray                    }
                 }
             }
         }
@@ -32,13 +29,13 @@
 <body class="bg-btg-dark text-btg-text font-sans antialiased selection:bg-btg-blue selection:text-white">
 
     <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-btg-dark/90 backdrop-blur-sm border-b border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-sm">        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center gap-2">
-                    <i class="fa-solid fa-chart-simple text-btg-blue text-2xl"></i>
-                    <span class="font-heading font-bold text-2xl tracking-wide">BTG MANAGEMENT</span>
+                <!-- TODO: Add BTG logo image here: <img src="logo.png" alt="BTG" class="h-8"> -->
+                <span class="text-2xl font-bold text-btg-text" style="font-family: 'Oswald', sans-serif; letter-spacing: 0.1em;">BTG</span>
+                                    <span class="text-sm font-medium text-btg-muted" style="font-family: 'Oswald', sans-serif; letter-spacing: 0.05em; margin-left: 0.5rem;">Management</span><span class="font-heading font-bold text-2xl tracking-wide">BTG MANAGEMENT</span>
                 </div>
                 
                 <!-- Desktop Menu -->
